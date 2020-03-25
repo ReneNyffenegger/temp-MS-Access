@@ -1,1 +1,5 @@
+--
+-- MSysObjects contains a list of every table, query, form, macro and report in our database.
+--
+
 executeQuery "select * from msysobjects where name like '*Sys*'"
