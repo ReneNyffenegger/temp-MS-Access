@@ -45,3 +45,17 @@ sub children(parentId as long) ' {
     loop ' }
 
 end sub ' }
+
+
+sub dao_query() ' {
+
+    dim rs as dao.recordSet
+
+    set rs = currentDb.openRecordset("SELECT * FROM MSysWSDPCacheComplexColumnMapping;")
+
+    do until rs.eof ' }
+       debug.print(rs("name"))
+       rs.moveNext
+    loop ' }
+
+end sub ' }
