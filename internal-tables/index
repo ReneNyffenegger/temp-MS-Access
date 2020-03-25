@@ -1,0 +1,1 @@
+executeQuery "select * from msysobjects where name like '*Sys*'"
